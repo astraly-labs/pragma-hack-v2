@@ -21,12 +21,6 @@ https://book.getfoundry.sh/
 $ forge build
 ```
 
-### Test
-
-```shell
-$ forge test
-```
-
 ### Format
 
 ```shell
