@@ -28,13 +28,11 @@ contract PragmaV2Template {
 
         // Read the current price from a price feed if it is less than 60 seconds old.
         // Each price feed (e.g., Spot Median ETH/USD) is identified by a unique identifier id.
-       
+
         SpotMedian memory data_feed = oracle.getSpotMedianNoOlderThan(feedId, 60);
-        
+
         // Now you can do whatever you want with the updated data
-        uint256 price = data_feed.price; 
+        uint256 price = data_feed.price;
         uint256 decimals = data_feed.metadata.decimals;
-
     }
-
 }
