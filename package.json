@@ -1,18 +1,16 @@
 {
   "name": "pragma-hack-v2",
   "version": "1.0.0",
-  "description": "**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
+    "lib": "lib"
+    },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Pragma Labs",
+  "license": "MIT",
   "devDependencies": {
     "@openzeppelin/contracts": "^5.1.0"
   },

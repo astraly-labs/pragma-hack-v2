@@ -25,6 +25,9 @@ jobs:
         with:
           version: nightly
 
+      - name: Install dependencies 
+        run : |
+          npm i 
       - name: Show Forge version
         run: |
           forge --version
