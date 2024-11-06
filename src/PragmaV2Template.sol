@@ -26,6 +26,9 @@ contract PragmaV2Template {
         uint256 fee = oracle.getUpdateFee(priceUpdate);
         oracle.updateDataFeeds{value: fee}(priceUpdate);
 
+        // In case the transmitted value was higher than the actual fee
+        payable(msg.sender).call{value: address(this).balance}("");
+
         // Read the current price from a price feed if it is less than 60 seconds old.
         // Each price feed (e.g., Spot Median ETH/USD) is identified by a unique identifier id.
 
